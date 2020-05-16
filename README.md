@@ -19,7 +19,7 @@ Before I launched into the project full throttle, I wanted to check my theoretic
 
 The solid lines plotted on the top diagram are the z-values of a 2D analytic function along the parameterized red line through space shown on the bottom diagram. The dashed lines plotted on the top diagram are the corresponding approximations found by convolving the blue points (bottom graph) with a *cubic spline kernel*.
 
-![test graph](kernel_test_results.PNG)
+![test graph](kernel_test_results.png)
 
 We can draw a few conclusions from this:
  1. The approximation seems to function broadly well
