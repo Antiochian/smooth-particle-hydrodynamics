@@ -33,4 +33,6 @@ The 4th problem is caused by the fact that SPH relies on a "neighbourhood" of lo
 
 Main algorithm implementation
 ----
+
+
 W.I.P.
