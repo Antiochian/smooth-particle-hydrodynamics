@@ -1,5 +1,4 @@
 # smooth-particle-hydrodynamics
-Sophisticated fluid simulation experiments
 
 I have been trying to implement a satisfactory fluid simulation for quite a long time now.
 All of my homebrew ideas have failed, and I happen to be doing a Fluid Dynamics course at uni at the moment, so I figured I had a good excuse to delve into the quite technical field of professional high-level fluid simulation.
@@ -27,13 +26,12 @@ The approximation seems to be appropriate for slowly-changing functions and away
 Fast Neighbourhood Search Test
 ---
 The compact support of the kernel function ensures that instead of summing over all particles, only the particles within the kernel support radius (h) need be considered. A cruicial technology to allow this to be leveraged is a fast neighbourhood search, which here I have implemented as a memory inefficient (but quite fast) hash table. The sample space is split into a grid of "h" spacing, and only particles in the one-ring around a target point need be considered in the count. Some illustrations are below.
-|Example 1|Example 2|Example 3|
-|:---:|:---:|:---:|
-|![test1](neighbourhood_test_1.png)|![test2](neighbourhood_test_2.png)|![test3](neighbourhood_test_3.png)|
+|Example 1|Example 2|Example 3|Timings|
+|:---:|:---:|:---:|:---:|
+|![test1](neighbourhood_test_1.png)|![test2](neighbourhood_test_2.png)|![test3](neighbourhood_test_3.png)|![timings](timing_data.png)
 
+Filling the hashtable takes O(n) time, and querying it takes O(1), where the constant time goes as h^2. Timing data is provided above.
 
 Main algorithm implementation
 ----
-
-
 W.I.P.
