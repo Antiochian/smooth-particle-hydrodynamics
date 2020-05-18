@@ -33,10 +33,10 @@ The 4th problem is caused by the fact that SPH relies on a "neighbourhood" of lo
 
 Fast Neighbourhood Search Test
 ---
-The compact support of the kernel function ensures that instead of summing over all particles, only particles within the kernel support radius (h) need be considered. A cruicial technology to allow this to be leveraged is a fast neighbourhood search, which here I have implemented as a memory inefficient (but quite fast) hash table. The sample space is split into a grid of "h" spacing, and only particles in the one-ring around a target point need be considered in the count. Some illustrations are below.
-
+The compact support of the kernel function ensures that instead of summing over all particles, only the particles within the kernel support radius (h) need be considered. A cruicial technology to allow this to be leveraged is a fast neighbourhood search, which here I have implemented as a memory inefficient (but quite fast) hash table. The sample space is split into a grid of "h" spacing, and only particles in the one-ring around a target point need be considered in the count. Some illustrations are below.
+|Example 1|Example 2|Example3|
 |:---:|:---:|:---|
-|![test1](neighbourhood_test_1.png)| |
+|![test1](neighbourhood_test_1.png)|![test2](neighbourhood_test_2.png)|![test3](neighbourhood_test_3.png)|
 
 
 Main algorithm implementation
