@@ -35,3 +35,19 @@ Filling the hashtable takes O(n) time, and querying it takes O(1), where the con
 Main algorithm implementation
 ----
 W.I.P.
+
+Roadmap
+----
+- [x] Test discretization and kernel convolution process
+- [x] Test spatial partioning for fast neighbourhood search
+- [x] Test Runge-Kutta differential solver
+- [x] Separate Navier-Stokes equations into piecewise differential equations
+- [ ] Investigate point splatting rendering techniques
+- [ ] Explore alternate numerical methods
+- [ ] Implementation of algorithm
+
+(Extensions?)
+- [ ] Interpolation between normals
+- [ ] Refined numerical differential solutions
+- [ ] C++ port
+- [ ] GPU code port?
